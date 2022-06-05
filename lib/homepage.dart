@@ -10,6 +10,38 @@ class HomePage extends StatelessWidget {
         title: Text("Dice"),
         centerTitle: true,
       ),
+      body: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Expanded(
+                  flex: 4,
+                  child: Image.asset(
+                    'assets/1.png',
+                  ),
+                ),
+                Expanded(
+                  flex: 2,
+                  child: Image.asset(
+                    'assets/3.png',
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Expanded(
+                  child: Image.asset(
+                    'assets/2.png',
+                  ),
+                ),
+              ],
+            )
+          ],
+        ),
+      ),
     );
   }
 }
