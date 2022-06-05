@@ -15,26 +15,26 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Row(
-              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
-                  flex: 4,
-                  child: Image.asset(
-                    'assets/1.png',
+                  child: GestureDetector(
+                    onTap: () {
+                      print("He hE");
+                    },
+                    child: Image.asset(
+                      'assets/1.png',
+                    ),
                   ),
                 ),
                 Expanded(
-                  flex: 2,
-                  child: Image.asset(
-                    'assets/3.png',
-                  ),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Expanded(
-                  child: Image.asset(
-                    'assets/2.png',
+                  child: GestureDetector(
+                    onTap: () {
+                      print('Tapped');
+                    },
+                    child: Image.asset(
+                      'assets/3.png',
+                    ),
                   ),
                 ),
               ],
